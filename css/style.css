@@ -1,0 +1,29 @@
+body {
+    background: linear-gradient(to right, #f3ffe2, #f7ecde);
+    font-family: cursive;
+}
+
+.card {
+    border-radius: 10px;
+
+}
+
+h1 {
+    font-weight: bold;
+    color: #352e28;
+    
+}
+
+button {
+    font-weight: bold;
+
+}
+
+
+table {
+    font-size: 16px;
+}
+
+thead {
+    font-weight: bold;
+}

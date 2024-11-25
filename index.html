@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h1 class="text-center  mb-4">Bookmarker</h1>
+        <p class="text-center text-success myhead">Bookmark your favorite sites</p>
+    
+        <div class="card shadow p-4 mb-5">
+            <form id="bookmark-form" onsubmit="handleFormSubmit(event)">
+                <div class="mb-3">
+                    <label for="site-name" class="form-label">Site Name</label>
+                    <input type="text" class="form-control" id="site-name" placeholder="Bookmark Name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="site-url" class="form-label">Site URL</label>
+                    <input type="url" class="form-control" id="site-url" placeholder="Website URL" required>
+                </div>
+                <div class="mybtn d-flex align-items-center justify-content-center">
+                    <button type="submit" class="btn btn-danger w-25 text-center">Submit</button>
+                </div>
+            </form>
+        </div>
+    
+        <div class="card shadow p-3">
+            <table class="table table-bordered text-center">
+                <thead class="mytable">
+                    <tr>
+                        <th>Index</th>
+                        <th>Website Name</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="bookmark-table">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
